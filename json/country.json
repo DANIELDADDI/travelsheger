@@ -1,0 +1,508 @@
+// All countries
+// length 252
+const countries = [
+      {name: "Afghanistan",code: "AF",id: 1,phone: 93,capital: "Kabul",alpha_3: "AFG"
+      },
+      {name: "Aland Islands",code: "AX",id: 2,phone: 358,capital: "Mariehamn",alpha_3: "ALA"
+      },
+      {name: "Albania",code: "AL",id: 3,phone: 355,capital: "Tirana",alpha_3: "ALB"
+      },
+      {name: "Algeria",code: "DZ",id: 4,phone: 213,capital: "Algiers",alpha_3: "DZA"
+      },
+      {name: "American Samoa",code: "AS",id: 5,phone: 1684,capital: "Pago Pago",alpha_3: "ASM"
+      },
+      {name: "Andorra",code: "AD",id: 6,phone: 376,capital: "Andorra la Vella",alpha_3: "AND"
+      },
+      {name: "Angola",code: "AO",id: 7,phone: 244,capital: "Luanda",alpha_3: "AGO"
+      },
+      {name: "Anguilla",code: "AI",id: 8,phone: 1264,capital: "The Valley",alpha_3: "AIA"
+      },
+      {name: "Antarctica",code: "AQ",id: 9,phone: 672,capital: "Antarctica",alpha_3: "ATA"
+      },
+      {name: "Antigua and Barbuda",code: "AG",id: 10,phone: 1268,capital: "St. John's",alpha_3: "ATG"
+      },
+      {name: "Argentina",code: "AR",id: 11,phone: 54,capital: "Buenos Aires",alpha_3: "ARG"
+      },
+      {name: "Armenia",code: "AM",id: 12,phone: 374,capital: "Yerevan",alpha_3: "ARM"
+      },
+      {name: "Aruba",code: "AW",id: 13,phone: 297,capital: "Oranjestad",alpha_3: "ABW"
+      },
+      {name: "Australia",code: "AU",id: 14,phone: 61,capital: "Canberra",alpha_3: "AUS"
+      },
+      {name: "Austria",code: "AT",id: 15,phone: 43,capital: "Vienna",alpha_3: "AUT"
+      },
+      {name: "Azerbaijan",code: "AZ",id: 16,phone: 994,capital: "Baku",alpha_3: "AZE"
+      },
+      {name: "Bahamas",code: "BS",id: 17,phone: 1242,capital: "Nassau",alpha_3: "BHS"
+      },
+      {name: "Bahrain",code: "BH",id: 18,phone: 973,capital: "Manama",alpha_3: "BHR"
+      },
+      {name: "Bangladesh",code: "BD",id: 19,phone: 880,capital: "Dhaka",alpha_3: "BGD"
+      },
+      {name: "Barbados",code: "BB",id: 20,phone: 1246,capital: "Bridgetown",alpha_3: "BRB"
+      },
+      {name: "Belarus",code: "BY",id: 21,phone: 375,capital: "Minsk",alpha_3: "BLR"
+      },
+      {name: "Belgium",code: "BE",id: 22,phone: 32,capital: "Brussels",alpha_3: "BEL"
+      },
+      {name: "Belize",code: "BZ",id: 23,phone: 501,capital: "Belmopan",alpha_3: "BLZ"
+      },
+      {name: "Benin",code: "BJ",id: 24,phone: 229,capital: "Porto-Novo",alpha_3: "BEN"
+      },
+      {name: "Bermuda",code: "BM",id: 25,phone: 1441,capital: "Hamilton",alpha_3: "BMU"
+      },
+      {name: "Bhutan",code: "BT",id: 26,phone: 975,capital: "Thimphu",alpha_3: "BTN"
+      },
+      {name: "Bolivia",code: "BO",id: 27,phone: 591,capital: "Sucre",alpha_3: "BOL"
+      },
+      {name: "Bonaire, Sint Eustatius and Saba",code: "BQ",id: 28,phone: 599,capital: "Kralendijk",alpha_3: "BES"
+      },
+      {name: "Bosnia and Herzegovina",code: "BA",id: 29,phone: 387,capital: "Sarajevo",alpha_3: "BIH"
+      },
+      {name: "Botswana",code: "BW",id: 30,phone: 267,capital: "Gaborone",alpha_3: "BWA"
+      },
+      {name: "Bouvet Island",code: "BV",id: 31,phone: 55,capital: "",alpha_3: "BVT"
+      },
+      {name: "Brazil",code: "BR",id: 32,phone: 55,capital: "Brasilia",alpha_3: "BRA"
+      },
+      {name: "British Indian Ocean Territory",code: "IO",id: 33,phone: 246,capital: "Diego Garcia",alpha_3: "IOT"
+      },
+      {name: "Brunei Darussalam",code: "BN",id: 34,phone: 673,capital: "Bandar Seri Begawan",alpha_3: "BRN"
+      },
+      {name: "Bulgaria",code: "BG",id: 35,phone: 359,capital: "Sofia",alpha_3: "BGR"
+      },
+      {name: "Burkina Faso",code: "BF",id: 36,phone: 226,capital: "Ouagadougou",alpha_3: "BFA"
+      },
+      {name: "Burundi",code: "BI",id: 37,phone: 257,capital: "Bujumbura",alpha_3: "BDI"
+      },
+      {name: "Cambodia",code: "KH",id: 38,phone: 855,capital: "Phnom Penh",alpha_3: "KHM"
+      },
+      {name: "Cameroon",code: "CM",id: 39,phone: 237,capital: "Yaounde",alpha_3: "CMR"
+      },
+      {name: "Canada",code: "CA",id: 40,phone: 1,capital: "Ottawa",alpha_3: "CAN"
+      },
+      {name: "Cape Verde",code: "CV",id: 41,phone: 238,capital: "Praia",alpha_3: "CPV"
+      },
+      {name: "Cayman Islands",code: "KY",id: 42,phone: 1345,capital: "George Town",alpha_3: "CYM"
+      },
+      {name: "Central African Republic",code: "CF",id: 43,phone: 236,capital: "Bangui",alpha_3: "CAF"
+      },
+      {name: "Chad",code: "TD",id: 44,phone: 235,capital: "N'Djamena",alpha_3: "TCD"
+      },
+      {name: "Chile",code: "CL",id: 45,phone: 56,capital: "Santiago",alpha_3: "CHL"
+      },
+      {name: "China",code: "CN",id: 46,phone: 86,capital: "Beijing",alpha_3: "CHN"
+      },
+      {name: "Christmas Island",code: "CX",id: 47,phone: 61,capital: "Flying Fish Cove",alpha_3: "CXR"
+      },
+      {name: "Cocos (Keeling) Islands",code: "CC",id: 48,phone: 672,capital: "West Island",alpha_3: "CCK"
+      },
+      {name: "Colombia",code: "CO",id: 49,phone: 57,capital: "Bogota",alpha_3: "COL"
+      },
+      {name: "Comoros",code: "KM",id: 50,phone: 269,capital: "Moroni",alpha_3: "COM"
+      },
+      {name: "Congo",code: "CG",id: 51,phone: 242,capital: "Brazzaville",alpha_3: "COG"
+      },
+      {name: "Congo, Democratic Republic of the Congo",code: "CD",id: 52,phone: 242,capital: "Kinshasa",alpha_3: "COD"
+      },
+      {name: "Cook Islands",code: "CK",id: 53,phone: 682,capital: "Avarua",alpha_3: "COK"
+      },
+      {name: "Costa Rica",code: "CR",id: 54,phone: 506,capital: "San Jose",alpha_3: "CRI"
+      },
+      {name: "Cote D'Ivoire",code: "CI",id: 55,phone: 225,capital: "Yamoussoukro",alpha_3: "CIV"
+      },
+      {name: "Croatia",code: "HR",id: 56,phone: 385,capital: "Zagreb",alpha_3: "HRV"
+      },
+      {name: "Cuba",code: "CU",id: 57,phone: 53,capital: "Havana",alpha_3: "CUB"
+      },
+      {name: "Curacao",code: "CW",id: 58,phone: 599,capital: "Willemstad",alpha_3: "CUW"
+      },
+      {name: "Cyprus",code: "CY",id: 59,phone: 357,capital: "Nicosia",alpha_3: "CYP"
+      },
+      {name: "Czech Republic",code: "CZ",id: 60,phone: 420,capital: "Prague",alpha_3: "CZE"
+      },
+      {name: "Denmark",code: "DK",id: 61,phone: 45,capital: "Copenhagen",alpha_3: "DNK"
+      },
+      {name: "Djibouti",code: "DJ",id: 62,phone: 253,capital: "Djibouti",alpha_3: "DJI"
+      },
+      {name: "Dominica",code: "DM",id: 63,phone: 1767,capital: "Roseau",alpha_3: "DMA"
+      },
+      {name: "Dominican Republic",code: "DO",id: 64,phone: 1809,capital: "Santo Domingo",alpha_3: "DOM"
+      },
+      {name: "Ecuador",code: "EC",id: 65,phone: 593,capital: "Quito",alpha_3: "ECU"
+      },
+      {name: "Egypt",code: "EG",id: 66,phone: 20,capital: "Cairo",alpha_3: "EGY"
+      },
+      {name: "El Salvador",code: "SV",id: 67,phone: 503,capital: "San Salvador",alpha_3: "SLV"
+      },
+      {name: "Equatorial Guinea",code: "GQ",id: 68,phone: 240,capital: "Malabo",alpha_3: "GNQ"
+      },
+      {name: "Eritrea",code: "ER",id: 69,phone: 291,capital: "Asmara",alpha_3: "ERI"
+      },
+      {name: "Estonia",code: "EE",id: 70,phone: 372,capital: "Tallinn",alpha_3: "EST"
+      },
+      {name: "Ethiopia",code: "ET",id: 71,phone: 251,capital: "Addis Ababa",alpha_3: "ETH"
+      },
+      {name: "Falkland Islands (Malvinas)",code: "FK",id: 72,phone: 500,capital: "Stanley",alpha_3: "FLK"
+      },
+      {name: "Faroe Islands",code: "FO",id: 73,phone: 298,capital: "Torshavn",alpha_3: "FRO"
+      },
+      {name: "Fiji",code: "FJ",id: 74,phone: 679,capital: "Suva",alpha_3: "FJI"
+      },
+      {name: "Finland",code: "FI",id: 75,phone: 358,capital: "Helsinki",alpha_3: "FIN"
+      },
+      {name: "France",code: "FR",id: 76,phone: 33,capital: "Paris",alpha_3: "FRA"
+      },
+      {name: "French Guiana",code: "GF",id: 77,phone: 594,capital: "Cayenne",alpha_3: "GUF"
+      },
+      {name: "French Polynesia",code: "PF",id: 78,phone: 689,capital: "Papeete",alpha_3: "PYF"
+      },
+      {name: "French Southern Territories",code: "TF",id: 79,phone: 262,capital: "Port-aux-Francais",alpha_3: "ATF"
+      },
+      {name: "Gabon",code: "GA",id: 80,phone: 241,capital: "Libreville",alpha_3: "GAB"
+      },
+      {name: "Gambia",code: "GM",id: 81,phone: 220,capital: "Banjul",alpha_3: "GMB"
+      },
+      {name: "Georgia",code: "GE",id: 82,phone: 995,capital: "Tbilisi",alpha_3: "GEO"
+      },
+      {name: "Germany",code: "DE",id: 83,phone: 49,capital: "Berlin",alpha_3: "DEU"
+      },
+      {name: "Ghana",code: "GH",id: 84,phone: 233,capital: "Accra",alpha_3: "GHA"
+      },
+      {name: "Gibraltar",code: "GI",id: 85,phone: 350,capital: "Gibraltar",alpha_3: "GIB"
+      },
+      {name: "Greece",code: "GR",id: 86,phone: 30,capital: "Athens",alpha_3: "GRC"
+      },
+      {name: "Greenland",code: "GL",id: 87,phone: 299,capital: "Nuuk",alpha_3: "GRL"
+      },
+      {name: "Grenada",code: "GD",id: 88,phone: 1473,capital: "St. George's",alpha_3: "GRD"
+      },
+      {name: "Guadeloupe",code: "GP",id: 89,phone: 590,capital: "Basse-Terre",alpha_3: "GLP"
+      },
+      {name: "Guam",code: "GU",id: 90,phone: 1671,capital: "Hagatna",alpha_3: "GUM"
+      },
+      {name: "Guatemala",code: "GT",id: 91,phone: 502,capital: "Guatemala City",alpha_3: "GTM"
+      },
+      {name: "Guernsey",code: "GG",id: 92,phone: 44,capital: "St Peter Port",alpha_3: "GGY"
+      },
+      {name: "Guinea",code: "GN",id: 93,phone: 224,capital: "Conakry",alpha_3: "GIN"
+      },
+      {name: "Guinea-Bissau",code: "GW",id: 94,phone: 245,capital: "Bissau",alpha_3: "GNB"
+      },
+      {name: "Guyana",code: "GY",id: 95,phone: 592,capital: "Georgetown",alpha_3: "GUY"
+      },
+      {name: "Haiti",code: "HT",id: 96,phone: 509,capital: "Port-au-Prince",alpha_3: "HTI"
+      },
+      {name: "Heard Island and McDonald Islands",code: "HM",id: 97,phone: 0,capital: "",alpha_3: "HMD"
+      },
+      {name: "Holy See (Vatican City State)",code: "VA",id: 98,phone: 39,capital: "Vatican City",alpha_3: "VAT"
+      },
+      {name: "Honduras",code: "HN",id: 99,phone: 504,capital: "Tegucigalpa",alpha_3: "HND"
+      },
+      {name: "Hong Kong",code: "HK",id: 100,phone: 852,capital: "Hong Kong",alpha_3: "HKG"
+      },
+      {name: "Hungary",code: "HU",id: 101,phone: 36,capital: "Budapest",alpha_3: "HUN"
+      },
+      {name: "Iceland",code: "IS",id: 102,phone: 354,capital: "Reykjavik",alpha_3: "ISL"
+      },
+      {name: "India",code: "IN",id: 103,phone: 91,capital: "New Delhi",alpha_3: "IND"
+      },
+      {name: "Indonesia",code: "ID",id: 104,phone: 62,capital: "Jakarta",alpha_3: "IDN"
+      },
+      {name: "Iran, Islamic Republic of",code: "IR",id: 105,phone: 98,capital: "Tehran",alpha_3: "IRN"
+      },
+      {name: "Iraq",code: "IQ",id: 106,phone: 964,capital: "Baghdad",alpha_3: "IRQ"
+      },
+      {name: "Ireland",code: "IE",id: 107,phone: 353,capital: "Dublin",alpha_3: "IRL"
+      },
+      {name: "Isle of Man",code: "IM",id: 108,phone: 44,capital: "Douglas, Isle of Man",alpha_3: "IMN"
+      },
+      {name: "Israel",code: "IL",id: 109,phone: 972,capital: "Jerusalem",alpha_3: "ISR"
+      },
+      {name: "Italy",code: "IT",id: 110,phone: 39,capital: "Rome",alpha_3: "ITA"
+      },
+      {name: "Jamaica",code: "JM",id: 111,phone: 1876,capital: "Kingston",alpha_3: "JAM"
+      },
+      {name: "Japan",code: "JP",id: 112,phone: 81,capital: "Tokyo",alpha_3: "JPN"
+      },
+      {name: "Jersey",code: "JE",id: 113,phone: 44,capital: "Saint Helier",alpha_3: "JEY"
+      },
+      {name: "Jordan",code: "JO",id: 114,phone: 962,capital: "Amman",alpha_3: "JOR"
+      },
+      {name: "Kazakhstan",code: "KZ",id: 115,phone: 7,capital: "Astana",alpha_3: "KAZ"
+      },
+      {name: "Kenya",code: "KE",id: 116,phone: 254,capital: "Nairobi",alpha_3: "KEN"
+      },
+      {name: "Kiribati",code: "KI",id: 117,phone: 686,capital: "Tarawa",alpha_3: "KIR"
+      },
+      {name: "Korea, Democratic People's Republic of",code: "KP",id: 118,phone: 850,capital: "Pyongyang",alpha_3: "PRK"
+      },
+      {name: "Korea, Republic of",code: "KR",id: 119,phone: 82,capital: "Seoul",alpha_3: "KOR"
+      },
+      {name: "Kosovo",code: "XK",id: 120,phone: 383,capital: "Pristina",alpha_3: "XKX"
+      },
+      {name: "Kuwait",code: "KW",id: 121,phone: 965,capital: "Kuwait City",alpha_3: "KWT"
+      },
+      {name: "Kyrgyzstan",code: "KG",id: 122,phone: 996,capital: "Bishkek",alpha_3: "KGZ"
+      },
+      {name: "Lao People's Democratic Republic",code: "LA",id: 123,phone: 856,capital: "Vientiane",alpha_3: "LAO"
+      },
+      {name: "Latvia",code: "LV",id: 124,phone: 371,capital: "Riga",alpha_3: "LVA"
+      },
+      {name: "Lebanon",code: "LB",id: 125,phone: 961,capital: "Beirut",alpha_3: "LBN"
+      },
+      {name: "Lesotho",code: "LS",id: 126,phone: 266,capital: "Maseru",alpha_3: "LSO"
+      },
+      {name: "Liberia",code: "LR",id: 127,phone: 231,capital: "Monrovia",alpha_3: "LBR"
+      },
+      {name: "Libyan Arab Jamahiriya",code: "LY",id: 128,phone: 218,capital: "Tripolis",alpha_3: "LBY"
+      },
+      {name: "Liechtenstein",code: "LI",id: 129,phone: 423,capital: "Vaduz",alpha_3: "LIE"
+      },
+      {name: "Lithuania",code: "LT",id: 130,phone: 370,capital: "Vilnius",alpha_3: "LTU"
+      },
+      {name: "Luxembourg",code: "LU",id: 131,phone: 352,capital: "Luxembourg",alpha_3: "LUX"
+      },
+      {name: "Macao",code: "MO",id: 132,phone: 853,capital: "Macao",alpha_3: "MAC"
+      },
+      {name: "Macedonia, the Former Yugoslav Republic of",code: "MK",id: 133,phone: 389,capital: "Skopje",alpha_3: "MKD"
+      },
+      {name: "Madagascar",code: "MG",id: 134,phone: 261,capital: "Antananarivo",alpha_3: "MDG"
+      },
+      {name: "Malawi",code: "MW",id: 135,phone: 265,capital: "Lilongwe",alpha_3: "MWI"
+      },
+      {name: "Malaysia",code: "MY",id: 136,phone: 60,capital: "Kuala Lumpur",alpha_3: "MYS"
+      },
+      {name: "Maldives",code: "MV",id: 137,phone: 960,capital: "Male",alpha_3: "MDV"
+      },
+      {name: "Mali",code: "ML",id: 138,phone: 223,capital: "Bamako",alpha_3: "MLI"
+      },
+      {name: "Malta",code: "MT",id: 139,phone: 356,capital: "Valletta",alpha_3: "MLT"
+      },
+      {name: "Marshall Islands",code: "MH",id: 140,phone: 692,capital: "Majuro",alpha_3: "MHL"
+      },
+      {name: "Martinique",code: "MQ",id: 141,phone: 596,capital: "Fort-de-France",alpha_3: "MTQ"
+      },
+      {name: "Mauritania",code: "MR",id: 142,phone: 222,capital: "Nouakchott",alpha_3: "MRT"
+      },
+      {name: "Mauritius",code: "MU",id: 143,phone: 230,capital: "Port Louis",alpha_3: "MUS"
+      },
+      {name: "Mayotte",code: "YT",id: 144,phone: 262,capital: "Mamoudzou",alpha_3: "MYT"
+      },
+      {name: "Mexico",code: "MX",id: 145,phone: 52,capital: "Mexico City",alpha_3: "MEX"
+      },
+      {name: "Micronesia, Federated States of",code: "FM",id: 146,phone: 691,capital: "Palikir",alpha_3: "FSM"
+      },
+      {name: "Moldova, Republic of",code: "MD",id: 147,phone: 373,capital: "Chisinau",alpha_3: "MDA"
+      },
+      {name: "Monaco",code: "MC",id: 148,phone: 377,capital: "Monaco",alpha_3: "MCO"
+      },
+      {name: "Mongolia",code: "MN",id: 149,phone: 976,capital: "Ulan Bator",alpha_3: "MNG"
+      },
+      {name: "Montenegro",code: "ME",id: 150,phone: 382,capital: "Podgorica",alpha_3: "MNE"
+      },
+      {name: "Montserrat",code: "MS",id: 151,phone: 1664,capital: "Plymouth",alpha_3: "MSR"
+      },
+      {name: "Morocco",code: "MA",id: 152,phone: 212,capital: "Rabat",alpha_3: "MAR"
+      },
+      {name: "Mozambique",code: "MZ",id: 153,phone: 258,capital: "Maputo",alpha_3: "MOZ"
+      },
+      {name: "Myanmar",code: "MM",id: 154,phone: 95,capital: "Nay Pyi Taw",alpha_3: "MMR"
+      },
+      {name: "Namibia",code: "NA",id: 155,phone: 264,capital: "Windhoek",alpha_3: "NAM"
+      },
+      {name: "Nauru",code: "NR",id: 156,phone: 674,capital: "Yaren",alpha_3: "NRU"
+      },
+      {name: "Nepal",code: "NP",id: 157,phone: 977,capital: "Kathmandu",alpha_3: "NPL"
+      },
+      {name: "Netherlands",code: "NL",id: 158,phone: 31,capital: "Amsterdam",alpha_3: "NLD"
+      },
+      {name: "Netherlands Antilles",code: "AN",id: 159,phone: 599,capital: "Willemstad",alpha_3: "ANT"
+      },
+      {name: "New Caledonia",code: "NC",id: 160,phone: 687,capital: "Noumea",alpha_3: "NCL"
+      },
+      {name: "New Zealand",code: "NZ",id: 161,phone: 64,capital: "Wellington",alpha_3: "NZL"
+      },
+      {name: "Nicaragua",code: "NI",id: 162,phone: 505,capital: "Managua",alpha_3: "NIC"
+      },
+      {name: "Niger",code: "NE",id: 163,phone: 227,capital: "Niamey",alpha_3: "NER"
+      },
+      {name: "Nigeria",code: "NG",id: 164,phone: 234,capital: "Abuja",alpha_3: "NGA"
+      },
+      {name: "Niue",code: "NU",id: 165,phone: 683,capital: "Alofi",alpha_3: "NIU"
+      },
+      {name: "Norfolk Island",code: "NF",id: 166,phone: 672,capital: "Kingston",alpha_3: "NFK"
+      },
+      {name: "Northern Mariana Islands",code: "MP",id: 167,phone: 1670,capital: "Saipan",alpha_3: "MNP"
+      },
+      {name: "Norway",code: "NO",id: 168,phone: 47,capital: "Oslo",alpha_3: "NOR"
+      },
+      {name: "Oman",code: "OM",id: 169,phone: 968,capital: "Muscat",alpha_3: "OMN"
+      },
+      {name: "Pakistan",code: "PK",id: 170,phone: 92,capital: "Islamabad",alpha_3: "PAK"
+      },
+      {name: "Palau",code: "PW",id: 171,phone: 680,capital: "Melekeok",alpha_3: "PLW"
+      },
+      {name: "Palestinian Territory, Occupied",code: "PS",id: 172,phone: 970,capital: "East Jerusalem",alpha_3: "PSE"
+      },
+      {name: "Panama",code: "PA",id: 173,phone: 507,capital: "Panama City",alpha_3: "PAN"
+      },
+      {name: "Papua New Guinea",code: "PG",id: 174,phone: 675,capital: "Port Moresby",alpha_3: "PNG"
+      },
+      {name: "Paraguay",code: "PY",id: 175,phone: 595,capital: "Asuncion",alpha_3: "PRY"
+      },
+      {name: "Peru",code: "PE",id: 176,phone: 51,capital: "Lima",alpha_3: "PER"
+      },
+      {name: "Philippines",code: "PH",id: 177,phone: 63,capital: "Manila",alpha_3: "PHL"
+      },
+      {name: "Pitcairn",code: "PN",id: 178,phone: 64,capital: "Adamstown",alpha_3: "PCN"
+      },
+      {name: "Poland",code: "PL",id: 179,phone: 48,capital: "Warsaw",alpha_3: "POL"
+      },
+      {name: "Portugal",code: "PT",id: 180,phone: 351,capital: "Lisbon",alpha_3: "PRT"
+      },
+      {name: "Puerto Rico",code: "PR",id: 181,phone: 1787,capital: "San Juan",alpha_3: "PRI"
+      },
+      {name: "Qatar",code: "QA",id: 182,phone: 974,capital: "Doha",alpha_3: "QAT"
+      },
+      {name: "Reunion",code: "RE",id: 183,phone: 262,capital: "Saint-Denis",alpha_3: "REU"
+      },
+      {name: "Romania",code: "RO",id: 184,phone: 40,capital: "Bucharest",alpha_3: "ROM"
+      },
+      {name: "Russian Federation",code: "RU",id: 185,phone: 7,capital: "Moscow",alpha_3: "RUS"
+      },
+      {name: "Rwanda",code: "RW",id: 186,phone: 250,capital: "Kigali",alpha_3: "RWA"
+      },
+      {name: "Saint Barthelemy",code: "BL",id: 187,phone: 590,capital: "Gustavia",alpha_3: "BLM"
+      },
+      {name: "Saint Helena",code: "SH",id: 188,phone: 290,capital: "Jamestown",alpha_3: "SHN"
+      },
+      {name: "Saint Kitts and Nevis",code: "KN",id: 189,phone: 1869,capital: "Basseterre",alpha_3: "KNA"
+      },
+      {name: "Saint Lucia",code: "LC",id: 190,phone: 1758,capital: "Castries",alpha_3: "LCA"
+      },
+      {name: "Saint Martin",code: "MF",id: 191,phone: 590,capital: "Marigot",alpha_3: "MAF"
+      },
+      {name: "Saint Pierre and Miquelon",code: "PM",id: 192,phone: 508,capital: "Saint-Pierre",alpha_3: "SPM"
+      },
+      {name: "Saint Vincent and the Grenadines",code: "VC",id: 193,phone: 1784,capital: "Kingstown",alpha_3: "VCT"
+      },
+      {name: "Samoa",code: "WS",id: 194,phone: 684,capital: "Apia",alpha_3: "WSM"
+      },
+      {name: "San Marino",code: "SM",id: 195,phone: 378,capital: "San Marino",alpha_3: "SMR"
+      },
+      {name: "Sao Tome and Principe",code: "ST",id: 196,phone: 239,capital: "Sao Tome",alpha_3: "STP"
+      },
+      {name: "Saudi Arabia",code: "SA",id: 197,phone: 966,capital: "Riyadh",alpha_3: "SAU"
+      },
+      {name: "Senegal",code: "SN",id: 198,phone: 221,capital: "Dakar",alpha_3: "SEN"
+      },
+      {name: "Serbia",code: "RS",id: 199,phone: 381,capital: "Belgrade",alpha_3: "SRB"
+      },
+      {name: "Serbia and Montenegro",code: "CS",id: 200,phone: 381,capital: "Belgrade",alpha_3: "SCG"
+      },
+      {name: "Seychelles",code: "SC",id: 201,phone: 248,capital: "Victoria",alpha_3: "SYC"
+      },
+      {name: "Sierra Leone",code: "SL",id: 202,phone: 232,capital: "Freetown",alpha_3: "SLE"
+      },
+      {name: "Singapore",code: "SG",id: 203,phone: 65,capital: "Singapur",alpha_3: "SGP"
+      },
+      {name: "St Martin",code: "SX",id: 204,phone: 721,capital: "Philipsburg",alpha_3: "SXM"
+      },
+      {name: "Slovakia",code: "SK",id: 205,phone: 421,capital: "Bratislava",alpha_3: "SVK"
+      },
+      {name: "Slovenia",code: "SI",id: 206,phone: 386,capital: "Ljubljana",alpha_3: "SVN"
+      },
+      {name: "Solomon Islands",code: "SB",id: 207,phone: 677,capital: "Honiara",alpha_3: "SLB"
+      },
+      {name: "Somalia",code: "SO",id: 208,phone: 252,capital: "Mogadishu",alpha_3: "SOM"
+      },
+      {name: "South Africa",code: "ZA",id: 209,phone: 27,capital: "Pretoria",alpha_3: "ZAF"
+      },
+      {name: "South Georgia and the South Sandwich Islands",code: "GS",id: 210,phone: 500,capital: "Grytviken",alpha_3: "SGS"
+      },
+      {name: "South Sudan",code: "SS",id: 211,phone: 211,capital: "Juba",alpha_3: "SSD"
+      },
+      {name: "Spain",code: "ES",id: 212,phone: 34,capital: "Madrid",alpha_3: "ESP"
+      },
+      {name: "Sri Lanka",code: "LK",id: 213,phone: 94,capital: "Colombo",alpha_3: "LKA"
+      },
+      {name: "Sudan",code: "SD",id: 214,phone: 249,capital: "Khartoum",alpha_3: "SDN"
+      },
+      {name: "Suriname",code: "SR",id: 215,phone: 597,capital: "Paramaribo",alpha_3: "SUR"
+      },
+      {name: "Svalbard and Jan Mayen",code: "SJ",id: 216,phone: 47,capital: "Longyearbyen",alpha_3: "SJM"
+      },
+      {name: "Swaziland",code: "SZ",id: 217,phone: 268,capital: "Mbabane",alpha_3: "SWZ"
+      },
+      {name: "Sweden",code: "SE",id: 218,phone: 46,capital: "Stockholm",alpha_3: "SWE"
+      },
+      {name: "Switzerland",code: "CH",id: 219,phone: 41,capital: "Berne",alpha_3: "CHE"
+      },
+      {name: "Syrian Arab Republic",code: "SY",id: 220,phone: 963,capital: "Damascus",alpha_3: "SYR"
+      },
+      {name: "Taiwan, Province of China",code: "TW",id: 221,phone: 886,capital: "Taipei",alpha_3: "TWN"
+      },
+      {name: "Tajikistan",code: "TJ",id: 222,phone: 992,capital: "Dushanbe",alpha_3: "TJK"
+      },
+      {name: "Tanzania, United Republic of",code: "TZ",id: 223,phone: 255,capital: "Dodoma",alpha_3: "TZA"
+      },
+      {name: "Thailand",code: "TH",id: 224,phone: 66,capital: "Bangkok",alpha_3: "THA"
+      },
+      {name: "Timor-Leste",code: "TL",id: 225,phone: 670,capital: "Dili",alpha_3: "TLS"
+      },
+      {name: "Togo",code: "TG",id: 226,phone: 228,capital: "Lome",alpha_3: "TGO"
+      },
+      {name: "Tokelau",code: "TK",id: 227,phone: 690,capital: "",alpha_3: "TKL"
+      },
+      {name: "Tonga",code: "TO",id: 228,phone: 676,capital: "Nuku'alofa",alpha_3: "TON"
+      },
+      {name: "Trinidad and Tobago",code: "TT",id: 229,phone: 1868,capital: "Port of Spain",alpha_3: "TTO"
+      },
+      {name: "Tunisia",code: "TN",id: 230,phone: 216,capital: "Tunis",alpha_3: "TUN"
+      },
+      {name: "Turkey",code: "TR",id: 231,phone: 90,capital: "Ankara",alpha_3: "TUR"
+      },
+      {name: "Turkmenistan",code: "TM",id: 232,phone: 7370,capital: "Ashgabat",alpha_3: "TKM"
+      },
+      {name: "Turks and Caicos Islands",code: "TC",id: 233,phone: 1649,capital: "Cockburn Town",alpha_3: "TCA"
+      },
+      {name: "Tuvalu",code: "TV",id: 234,phone: 688,capital: "Funafuti",alpha_3: "TUV"
+      },
+      {name: "Uganda",code: "UG",id: 235,phone: 256,capital: "Kampala",alpha_3: "UGA"
+      },
+      {name: "Ukraine",code: "UA",id: 236,phone: 380,capital: "Kiev",alpha_3: "UKR"
+      },
+      {name: "United Arab Emirates",code: "AE",id: 237,phone: 971,capital: "Abu Dhabi",alpha_3: "ARE"
+      },
+      {name: "United Kingdom",code: "GB",id: 238,phone: 44,capital: "London",alpha_3: "GBR"
+      },
+      {name: "United States",code: "US",id: 239,phone: 1,capital: "Washington",alpha_3: "USA"
+      },
+      {name: "United States Minor Outlying Islands",code: "UM",id: 240,phone: 1,capital: "",alpha_3: "UMI"
+      },
+      {name: "Uruguay",code: "UY",id: 241,phone: 598,capital: "Montevideo",alpha_3: "URY"
+      },
+      {name: "Uzbekistan",code: "UZ",id: 242,phone: 998,capital: "Tashkent",alpha_3: "UZB"
+      },
+      {name: "Vanuatu",code: "VU",id: 243,phone: 678,capital: "Port Vila",alpha_3: "VUT"
+      },
+      {name: "Venezuela",code: "VE",id: 244,phone: 58,capital: "Caracas",alpha_3: "VEN"
+      },
+      {name: "Viet Nam",code: "VN",id: 245,phone: 84,capital: "Hanoi",alpha_3: "VNM"
+      },
+      {name: "Virgin Islands, British",code: "VG",id: 246,phone: 1284,capital: "Road Town",alpha_3: "VGB"
+      },
+      {name: "Virgin Islands, U.s.",code: "VI",id: 247,phone: 1340,capital: "Charlotte Amalie",alpha_3: "VIR"
+      },
+      {name: "Wallis and Futuna",code: "WF",id: 248,phone: 681,capital: "Mata Utu",alpha_3: "WLF"
+      },
+      {name: "Western Sahara",code: "EH",id: 249,phone: 212,capital: "El-Aaiun",alpha_3: "ESH"
+      },
+      {name: "Yemen",code: "YE",id: 250,phone: 967,capital: "Sanaa",alpha_3: "YEM"
+      },
+      {name: "Zambia",code: "ZM",id: 251,phone: 260,capital: "Lusaka",alpha_3: "ZMB"
+      },
+      {name: "Zimbabwe",code: "ZW",id: 252,phone: 263,capital: "Harare",alpha_3: "ZWE"
+      }
+];
