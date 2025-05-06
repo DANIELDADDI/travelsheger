@@ -1,0 +1,6 @@
+![payment](https://github.com/user-attachments/assets/7f6581c5-400d-4c65-98da-7d5eac61b134)
+![passegerdetails](https://github.com/user-attachments/assets/85692d67-c680-4ec5-9cd4-93883f88ac9b)
+![homepage](https://github.com/user-attachments/assets/fd1419e7-20bb-4917-b976-a3b6e3ad917d)
+![flightsearch](https://github.com/user-attachments/assets/0cbb8c0c-c199-4371-b113-2e07e36ad5b8)
+![flightdetails](https://github.com/user-attachments/assets/e10eec5b-19a3-4609-b0b7-8f45045e3d18)
+![search](https://github.com/user-attachments/assets/262fad22-0d9d-4a48-a434-8cbc070302e7)
